@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DP Beauty Lab — premium kozmetički salon u Zagrebu. Napredni tretmani lica, body shaping i certificirane edukacije s upisom u e-radnu knjižicu. 15+ godina iskustva.">
+    <title>DP Beauty Lab | Premium Kozmetički Salon Zagreb</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DP Beauty Lab | Premium Kozmetički Salon Zagreb">
+    <meta property="og:description" content="Premium tretmani lica i tijela uz certificirane edukacije — sve na jednom mjestu, u srcu Zagreba. 15+ godina iskustva.">
+    <meta property="og:image" content="hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hr_HR">
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DP Beauty Lab | Premium Kozmetički Salon Zagreb">
+    <meta name="twitter:description" content="Premium tretmani lica i tijela uz certificirane edukacije — Zagreb, Nova Ves 23/1.">
+    <meta name="twitter:image" content="hero.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">DP Beauty Lab</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">O nama</a></li>
+                    <li><a href="#services">Tretmani</a></li>
+                    <li><a href="#education">Edukacije</a></li>
+                    <li><a href="#pricelist">Cjenik</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="reveal">Ljepota u svakom <br><span>detalju</span></h1>
+                <p class="reveal">Premium tretmani lica i tijela uz certificirane edukacije — sve na jednom mjestu, u srcu Zagreba.</p>
+                <div class="cta-group reveal">
+                    <a href="#contact" class="btn btn-primary">Rezerviraj termin</a>
+                    <a href="#services" class="btn btn-secondary">Istraži tretmane</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="reveal">
+                        <span class="section-subtitle">O NAMA</span>
+                        <h2 class="section-title">Vaša koža u<br>pravim rukama</h2>
+                        <p>DP Beauty Lab nije samo salon — to je prostor gdje se vrhunska stručnost susreće s osobnom pažnjom. Svaki tretman prilagođavamo vašim potrebama jer vjerujemo da prava ljepota dolazi iz njege i povjerenja.</p>
+                        <p style="margin-top: 1.2rem;">Specijalizirani smo za napredne tretmane lica, body shaping tehnologije i profesionalne edukacije koje se upisuju u e-radnu knjižicu.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Godina iskustva</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5.000+</span>
+                                <span class="stat-label">Zadovoljnih klijenata</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">Certificiranih tečajeva</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image reveal">
+                        <div class="image-stack">
+                            <div class="main-image"></div>
+                            <div class="accent-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">TRETMANI</span>
+                    <h2 class="section-title">Što nudimo</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                        <h3>Tretmani lica</h3>
+                        <p>Dijagnostika kože, dubinsko čišćenje, intenzivna hidratacija i anti-age protokoli — prilagođeni isključivo vama i vašem tipu kože.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="eye"></i></div>
+                        <h3>Obrve i trepavice</h3>
+                        <p>Precizno oblikovane obrve i voluminozne trepavice koje naglašavaju vaš prirodni pogled. Laminacija, threading, lash lift i puder tehnika.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i data-lucide="zap"></i></div>
+                        <h3>Body Shaping</h3>
+                        <p>Kavitacija, radiofrekvencija i limfna drenaža — najmodernije tehnologije za vidljivo oblikovanje tijela i redukciju celulita.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="grid grid-2 items-center">
+                    <div class="edu-image reveal">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="reveal">
+                        <span class="section-subtitle">EDUKACIJE</span>
+                        <h2 class="section-title">Izgradite karijeru<br>u beauty industriji</h2>
+                        <p>Naše edukacije osmišljene su za one koji žele više od tečaja — nudimo cjelovit sustav znanja, praktičan rad i certifikat koji otvara vrata na tržištu rada.</p>
+                        <ul class="edu-features">
+                            <li><i data-lucide="check-circle"></i> Upis u e-radnu knjižicu — pravno priznat certifikat</li>
+                            <li><i data-lucide="check-circle"></i> Mali grupe, individualan pristup i rad na modelima</li>
+                            <li><i data-lucide="check-circle"></i> Edukatori s 15+ godina aktivne prakse</li>
+                            <li><i data-lucide="check-circle"></i> Materijali i pribor uključeni u cijenu</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-l">Informirajte se o upisima</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricelist Section -->
+        <section id="pricelist" class="section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">CJENIK</span>
+                    <h2 class="section-title">Transparentne cijene</h2>
+                </div>
+                <div class="pricelist-container reveal">
+                    <!-- UGRADNJA TREPAVICA -->
+                    <div class="price-category">
+                        <h3>Ugradnja trepavica</h3>
+                        <div class="price-item"><span>Klasične</span><span class="price">50,00 €</span></div>
+                        <div class="price-item"><span>Nadopuna (do 3 tjedna)</span><span class="price">35,00 €</span></div>
+                        <div class="price-item"><span>Volumenske</span><span class="price">55,00 €</span></div>
+                        <div class="price-item"><span>Nadopuna (do 3 tjedna)</span><span class="price">40,00 €</span></div>
+                        <div class="price-item"><span>Hybrid</span><span class="price">50,00 €</span></div>
+                        <div class="price-item"><span>Nadopuna (do 3 tjedna)</span><span class="price">35,00 €</span></div>
+                    </div>
+
+                    <!-- OBRVE & OSTALO -->
+                    <div class="price-category">
+                        <h3>Obrve & Ostalo</h3>
+                        <div class="price-item"><span>Puder obrve</span><span class="price">180,00 €</span></div>
+                        <div class="price-item"><span>Korekcija (3–4 tjedna)</span><span class="price">50,00 €</span></div>
+                        <div class="price-item"><span>Korekcija (do 6 mjeseci)</span><span class="price">130,00 €</span></div>
+                        <div class="price-item"><span>Lash Lift</span><span class="price">40,00 €</span></div>
+                        <div class="price-item"><span>Laminacija obrva</span><span class="price">35,00 €</span></div>
+                    </div>
+
+                    <!-- THREADING & BOJANJE -->
+                    <div class="price-category">
+                        <h3>Threading & Bojanje</h3>
+                        <div class="price-item"><span>Threading obrve</span><span class="price">8,00 €</span></div>
+                        <div class="price-item"><span>Threading nausnica i brada</span><span class="price">15,00 €</span></div>
+                        <div class="price-item"><span>Bojanje obrva</span><span class="price">8,00 €</span></div>
+                    </div>
+
+                    <!-- TRETMANI LICA -->
+                    <div class="price-category">
+                        <h3>Tretmani lica</h3>
+                        <div class="price-item detail">
+                            <div class="item-info">
+                                <span>Hydrafacial</span>
+                                <small>Piling · UZV špatula · Hydrafacial · visoka frekvencija · maska · hranjiva krema · LED maska</small>
+                            </div>
+                            <span class="price">60,00 €</span>
+                        </div>
+                        <div class="price-item detail">
+                            <div class="item-info">
+                                <span>Hydrafacial Deluxe</span>
+                                <small>Piling · UZV špatula · Hydrafacial · visoka frekvencija · kavitacija · radiofrekvencija · maska · hranjiva krema · LED maska</small>
+                            </div>
+                            <span class="price">80,00 €</span>
+                        </div>
+                        <div class="price-item detail">
+                            <div class="item-info">
+                                <span>Glow Facial</span>
+                                <small>Eksfolijacija aparatom · limfna drenaža aparatom · UZV špatula · maska · hranjiva krema · LED maska</small>
+                            </div>
+                            <span class="price">65,00 €</span>
+                        </div>
+                        <div class="price-item detail">
+                            <div class="item-info">
+                                <span>Tretman lica kisikom</span>
+                                <small>Piling · UZV špatula · aplikacija kisika aparatom · visoka frekvencija · maska · hranjiva krema · LED maska</small>
+                            </div>
+                            <span class="price">50,00 €</span>
+                        </div>
+                    </div>
+
+                    <!-- TEČAJEVI -->
+                    <div class="price-category">
+                        <h3>Tečajevi — upis u e-radnu knjižicu</h3>
+                        <div class="price-item"><span>Hydrafacial</span><span class="price">350,00 €</span></div>
+                        <div class="price-item"><span>Osnovna njega lica</span><span class="price">1.000,00 €</span></div>
+                        <div class="price-item"><span>Lash Lift</span><span class="price">300,00 €</span></div>
+                        <div class="price-item"><span>Brow Lift</span><span class="price">250,00 €</span></div>
+                        <div class="price-item"><span>Lip Booster</span><span class="price">500,00 €</span></div>
+                        <div class="price-item"><span>Threading</span><span class="price">250,00 €</span></div>
+                        <div class="price-item"><span>Ekstenzije trepavica</span><span class="price">500,00 €</span></div>
+                    </div>
+                </div>
+                <p class="price-note reveal">Svi tečajevi uključuju pravo upisa u e-radnu knjižicu. Za grupne popuste i prilagođene pakete kontaktirajte nas.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="reveal">
+                        <span class="section-subtitle">KONTAKT</span>
+                        <h2 class="section-title">Zakažite tretman</h2>
+                        <p style="margin-bottom: 2.5rem; opacity: 0.8;">Kontaktirajte nas telefonom ili putem Instagrama i dogovorite termin koji vam odgovara.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h4>Adresa</h4>
+                                    <p>Nova Ves 23/1, 10000 Zagreb</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="clock"></i>
+                                <div>
+                                    <h4>Radno vrijeme</h4>
+                                    <p>Pon – Pet: 09:00 – 20:00</p>
+                                    <p>Subota: 09:00 – 15:00</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <h4>Telefon / WhatsApp</h4>
+                                    <p>
+                                        <a href="tel:+385916063471">+385 91 606 3471</a>
+                                        <a href="https://wa.me/385916063471" target="_blank" class="whatsapp-link">
+                                            <i data-lucide="message-circle"></i> WhatsApp
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="instagram"></i>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p><a href="https://instagram.com/dp_beauty_lab" target="_blank">@dp_beauty_lab</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map reveal">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Nova+Ves+23%2F1,+10000+Zagreb&z=17&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">DP Beauty Lab</div>
+                <div class="footer-center">
+                    <p>Nova Ves 23/1, Zagreb &nbsp;·&nbsp; <a href="tel:+385916063471">+385 91 606 3471</a> &nbsp;·&nbsp; <a href="https://instagram.com/dp_beauty_lab" target="_blank">@dp_beauty_lab</a></p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2026 DP Beauty Lab. Sva prava pridržana.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
