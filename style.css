@@ -700,8 +700,10 @@ footer {
     }
 
     #hero {
-        background-size: 100%;
+        background-size: 100% auto;
         background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #0a0a0a;
     }
 
     #hero h1 {
