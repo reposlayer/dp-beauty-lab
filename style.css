@@ -700,7 +700,8 @@ footer {
     }
 
     #hero {
-        background-position: 30% center;
+        background-size: 100%;
+        background-position: center top;
     }
 
     #hero h1 {
