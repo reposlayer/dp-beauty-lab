@@ -699,6 +699,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    #hero {
+        background-position: 30% center;
+    }
+
     #hero h1 {
         font-size: 2.8rem;
     }
