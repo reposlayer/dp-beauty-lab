@@ -111,6 +111,19 @@ header.scrolled {
     padding: 1rem 0;
 }
 
+/* White navbar over hero (light mode only) */
+.light-mode header:not(.scrolled) .logo-text,
+.light-mode header:not(.scrolled) nav ul a {
+    color: #fff;
+}
+
+.light-mode header:not(.scrolled) .theme-toggle,
+.light-mode header:not(.scrolled) .mobile-menu-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -214,6 +227,7 @@ header nav ul a:hover {
     font-size: 4.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
 #hero h1 span {
@@ -277,13 +291,23 @@ header nav ul a:hover {
 
 /* Section Headers */
 .section-subtitle {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     color: var(--accent);
     font-weight: 600;
     letter-spacing: 3px;
     font-size: 0.75rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+.section-subtitle::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
 }
 
 .section-title {
@@ -297,12 +321,21 @@ header nav ul a:hover {
     margin-bottom: 4rem;
 }
 
+.section-header .section-subtitle {
+    justify-content: center;
+}
+
 /* Stats */
 .stats {
     display: flex;
     gap: 2.5rem;
     margin-top: 3rem;
     flex-wrap: wrap;
+}
+
+.stat-item {
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--accent);
 }
 
 .stat-number {
@@ -314,11 +347,11 @@ header nav ul a:hover {
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    opacity: 0.6;
-    margin-top: 0.3rem;
+    opacity: 0.55;
+    margin-top: 0.35rem;
 }
 
 /* Image Stack */
@@ -354,13 +387,15 @@ header nav ul a:hover {
     background: var(--bg-secondary);
     padding: 3rem;
     border: 1px solid var(--border);
+    border-top: 3px solid transparent;
     transition: var(--transition);
 }
 
 .service-card:hover {
     transform: translateY(-8px);
     border-color: var(--accent);
-    box-shadow: var(--shadow);
+    border-top-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(197, 160, 89, 0.12);
 }
 
 .service-icon {
@@ -394,15 +429,21 @@ header nav ul a:hover {
 .edu-features li {
     display: flex;
     align-items: flex-start;
-    gap: 0.9rem;
+    gap: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.edu-features li:last-child {
+    border-bottom: none;
 }
 
 .edu-features i {
     color: var(--accent);
     flex-shrink: 0;
-    margin-top: 0.15rem;
+    margin-top: 0.1rem;
 }
 
 .edu-image {
@@ -453,8 +494,14 @@ header nav ul a:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.9rem;
-    padding-bottom: 0.9rem;
+    padding: 0.5rem 0.75rem 0.9rem;
     border-bottom: 1px dashed var(--border);
+    border-radius: 2px;
+    transition: background 0.2s ease;
+}
+
+.price-item:hover {
+    background: var(--bg-alt);
 }
 
 .price-item:last-child {
