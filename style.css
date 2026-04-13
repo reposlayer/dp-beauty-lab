@@ -249,6 +249,7 @@ header nav ul a:hover {
 #hero h1 span {
     color: var(--accent);
     font-style: italic;
+    font-weight: 400;
 }
 
 #hero p {
